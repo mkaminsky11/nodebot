@@ -10,11 +10,14 @@ var chatServer = "chat.shazow.net";
 var Connection = require("ssh2");
 var conn = new Connection();
 var math = require('mathjs');
-var weather = require('weather-js');
+var weather = require('./weather.js');
 var upsidedown = require('upsidedown');
-var hn = require("hn.js");
+var hn = require("./news.js");
 var request = require('request');
 var global = require('./const.js');
+var translator = require('./translate.js');
+var time = require('./time.js');
+var btc = require('./btc.js');
 var fs = require('fs');
 
 var trivia = false;
@@ -22,13 +25,12 @@ var trivia_index = 0;
 
 //SOME RANDOM VARIABLES
 var misc = global.misc;
-var times = global.times;
 var trivia_q = global.trivia;
 var destroy = global.destroy;
-var insult_1 = ["is a", "lives in a", "smells like a", "looks like a", "talks like a", "reminds me of a", "types like a"];
-var insult_2 = ["smelly","rotten","stupid","ignorant","old","lazy","dim-witted","crazy","paranoid", "immature", "inbred"];
-var insult_3 = ["baboon","apple","house","troll","monkey","java programmer","politician","pizza box", "child","dog","cat","watermelon"];
-var sing = ["Sweet Caroline...", "There is...a house...in New Orleans....", "The Devil went down to Georgia, he was looking for a soul to steal...","Oh, say can you see, by the dawn's early light...","Gold on the ceiling..."];
+var insult_1 = global.i1;
+var insult_2 = global.i2;
+var insult_3 = global.i3;
+var sing = global.sing;
 
 var recommend = global.rec;
 var ready = false;
@@ -148,7 +150,7 @@ conn.on("ready", function() {
 							echo = echo.replace("nodebot echo","").replace("nodebot, echo", "");
 							
 							out = echo.trim();
-							if(out !== "/exit"){
+							if(out[0] !== "/"){
 								write(out, prefix, stream);
 							}
 						}
@@ -177,17 +179,8 @@ conn.on("ready", function() {
 							
 						}
 						else if(command === "weather" && arr.length >= 3 && ready === true){
-							var w = text;
-							w  = text.replace("nodebot weather","").replace("nodebot, weather", "").trim();
-							
-							weather.find({search: w, degreeType: 'F'}, function(err, result) {
-								try{
-									out = "It is "+ result[0].current.temperature +" degrees F in "+w;
-									write(out, prefix, stream);
-								}catch(e){
-									out = "That's not a place!";
-									write(out, prefix, stream);		
-								}
+							weather.info(text, function(out){
+								write(out, prefix, stream);
 							});
 						}
 						else if(command === "flip" && arr.length >= 3){
@@ -198,117 +191,23 @@ conn.on("ready", function() {
 							write(out, prefix, stream);
 						}
 						else if(command === "5:00"){
-							var date = new Date();
-							var current_hour = date.getHours() + 1;
-							var done = false;
-							//the goal = 5 pm, so 18 (for some reason)
-							
-							for(var i = 0; i < times.length; i++){
-								if(done === false){
-									var temp_hour = current_hour + times[i].time;
-									if(temp_hour > 24){
-										temp_hour = temp_hour - 24;
-									}
-									if(temp_hour <= 0){
-										temp_hour = temp_hour + 24;
-									}
-									
-									if(temp_hour === 18){
-										done = true;
-										out = "It's 5 o'clock somewhere. Right now, it is quitting time in: " + pick(times[i].cities); 
-										write(out, prefix, stream);
-									}
-								}
-							}
+							time.five(function(out){
+								write(out, prefix, stream);
+							});
 						}
 						else if(command === "news"){
-							var page = "home";
-							if(arr.length === 3){
-								var temp_page = arr[2];
-								if(temp_page === "best" || temp_page === "newest"){
-									page = temp_page;
-								}
-							}
-							
-							if(page === "home"){
-								hn.home(function(err, items) {
-									
-								    out = "";
-								    var temp = [];
-								    for(var i = 0; i < items.length/3; i++){
-									    temp.push(items[i].title);
-								    }
-								    out = "From HN: " + temp.join("...");
-								    write(out, prefix, stream);								    
-								});
-							}
-							else if(page === "best"){
-								hn.best(function(err, items) {
-									
-								    out = "";
-								    var temp = [];
-								    for(var i = 0; i < items.length/3; i++){
-									    temp.push(items[i].title);
-								    }
-								    out = "From HN: " + temp.join("...");
-								    write(out, prefix, stream);		
-								    
-								});
-							}else{
-								hn.newest(function(err, items) {
-									
-								    out = "";
-								    var temp = [];
-								    for(var i = 0; i < items.length/3; i++){
-									    temp.push(items[i].title);
-								    }
-								    out = "From HN: " + temp.join("...");
-								    write(out, prefix, stream);		
-								    
-								});
-							}
+							hn.news(arr, function(out){
+								write(out, prefix, stream);
+							});
 						}
 						else if(command === "translate" && arr.length >= 5){
-							var input_lang = arr[2].toLowerCase();
-							var output_lang = arr[3].toLowerCase();
-							var to_translate = arr.slice(4).join(" ");
-							
-							request('http://api.mymemory.translated.net/get?q='+to_translate+'!&langpair='+input_lang+'|'+output_lang, function (error, response, body) {
-								try{
-								  if (!error && response.statusCode == 200) {
-									out = JSON.parse(body).responseData.translatedText;		
-									write(out, prefix, stream);	    
-								  }
-								  else{
-									  write("There was an error with the translation", prefix, stream);
-									}
-								} catch(e){
-									write("There was an error with the translation", prefix, stream);
-								}	
+							translator.translate(arr, function(out){
+								write(out, prefix, stream);
 							});
 						}
 						else if(command === "btc"){
-							request("http://coinabul.com/api.php", function(error, response, body){
-								//try{
-									if(!error && response.statusCode === 200){
-										var btc = JSON.parse(body).BTC.USD;
-										console.log(JSON.parse(body).BTC);
-										out = "Value in USD: $" + btc;
-										write(out, prefix, stream);
-									}
-								//}catch(e){}
-								
-							});
-						}
-						else if(command === "stands_for" && arr.length === 3){
-							var acro = arr[2];
-							request("http://www.nactem.ac.uk/softwar/acromine/dictionary.py?sf="+acro, function(error, response, body){
-								try{
-									if(!error && response.statusCode === 200){
-										out = "Stands for: " + JSON.parse(body).lfs[0].lf + " Since " + JSON.parse(body).lfs[0].since;
-										write(out, prefix, stream);
-									}
-								}catch(e){}
+							btc.usd(function(out){
+								write(out, prefix, stream);
 							});
 						}
 						else{

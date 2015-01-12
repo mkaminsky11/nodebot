@@ -1,5 +1,9 @@
 # nodebot
-An ssh bot for ssh-chat by shazow. Based off of zshbot by Sxw1212
+An ssh bot for ssh-chat by shazow. Based off of zshbot by Sxw1212. To log on using the username `user`, use:
+
+```
+ssh user@chat.shazow.net
+```
 
 This bot does a bunch of somewhat random things:
 

@@ -1,78 +1,5 @@
 exports.misc = ["(っ◔◡◔)っ ♥ _ ♥","▂▃▄▅▆▇█▓▒░_░▒▓█▇▆▅▄▃▂","˜”*°•.˜”*°• _ •°*”˜.•°*”˜","( ͡° ͜ʖ﻿ ͡°) _ ( ͡° ͜ʖ﻿ ͡°)"];
 
-exports.times = [
-	{
-		time: -6,
-		cities: ["The middle of the freaking Pacific Ocean"]
-	},{
-		time: -5,
-		cities: ["The middle of the freaking Pacific Ocean"]
-	},{
-		time: -4,
-		cities: ["Ancorage","Fairbanks"]
-	},{
-		time: -3,
-		cities: ["Whitehorse","San Fransisco","Los Angeles"]
-	},{
-		time: -2,
-		cities: ["Denver","Salt Lake City","Calgary"]
-	},{
-		time: -1,
-		cities: ["Houston","Dallas","Winnipeg"]
-	},{
-		time: 0,
-		cities: ["Boston","Atlanta","New York"]
-	},{
-		time: 1,
-		cities: ["Sucre","La Paz","Halifax"]
-	},{
-		time: 2,
-		cities: ["Nuuk","Buenos Aires"]
-	},{
-		time: 3,
-		cities: ["Brasilia","Rio de Janeiro"]
-	},{
-		time: 4,
-		cities: ["The middle of the Altantic Ocean"]
-	},{
-		time: 5,
-		cities: ["Lisbon","London","Greenwhich"]
-	},{
-		time: 6,
-		cities: ["Berlin","Oslo","Zurich"]
-	},{
-		time: 7,
-		cities: ["Kiev","Helsinki","Cairo"]
-	},{
-		time: 8,
-		cities: ["Moscow","Baghdad","Mecca"]
-	},{
-		time: 9,
-		cities: ["Dubia"]
-	},{
-		time: 10,
-		cities: ["Siberia"]
-	},{
-		time: 11,
-		cities: ["Some formerly Soviet central Asian nations"]
-	},{
-		time: 12,
-		cities: ["Bankok","Vietnam"]
-	},{
-		time: 13,
-		cities: ["Perth","Beijing","Manila"]
-	},{
-		time: 14,
-		cities: ["Tokyo","Yatusk"]
-	},{
-		time: 15,
-		cities: ["Eastern Russia"]
-	},{
-		time: 16,
-		cities: ["Sydney","Melbourne"]
-	}
-];
-
 exports.trivia = [{
 	q: "Function to determine the length of a string in Golang",
 	a: "len"
@@ -118,3 +45,7 @@ exports.destroy = ["a large wooden fish","a massive laser","Linux users","node",
 
 exports.rec = ["Learn node.js. Seriously. Learn it", "Read dilbert", "Go to commitstrip.com","Learn to ski", "Have some clam chowder","Don't ask a bot for recommendations","Write an ssh bot","get a job, bum","I don't know. Make more money, I guess?","Move to Maine","Dual-boot your computer","don't eat that slice of pizza. Drop it. Seriously, go to the gym instead."];
 
+exports.i1 = ["is a", "lives in a", "smells like a", "looks like a", "talks like a", "reminds me of a", "types like a"];
+exports.i2 = ["smelly","rotten","stupid","ignorant","old","lazy","dim-witted","crazy","paranoid", "immature", "inbred"];
+exports.i3 = ["baboon","apple","house","troll","monkey","java programmer","politician","pizza box", "child","dog","cat","watermelon"];
+exports.sing = ["Sweet Caroline...", "There is...a house...in New Orleans....", "The Devil went down to Georgia, he was looking for a soul to steal...","Oh, say can you see, by the dawn's early light...","Gold on the ceiling..."];
