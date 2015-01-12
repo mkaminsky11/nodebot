@@ -5,7 +5,7 @@ NODEBOT: a bot for ssh-chat
 //LOAD ALL NECESSARY MODULES
 var nick = "nodebot";
 var comma = nick + ",";
-var sshKey = "../../../../root/.ssh/id_rsa";
+var sshKey = "../../../../../root/.ssh/id_rsa";
 var chatServer = "chat.shazow.net";
 var Connection = require("ssh2");
 var conn = new Connection();
@@ -29,8 +29,8 @@ var insult_1 = ["is a", "lives in a", "smells like a", "looks like a", "talks li
 var insult_2 = ["smelly","rotten","stupid","ignorant","old","lazy","dim-witted","crazy","paranoid", "immature", "inbred"];
 var insult_3 = ["baboon","apple","house","troll","monkey","java programmer","politician","pizza box", "child","dog","cat","watermelon"];
 var sing = ["Sweet Caroline...", "There is...a house...in New Orleans....", "The Devil went down to Georgia, he was looking for a soul to steal...","Oh, say can you see, by the dawn's early light...","Gold on the ceiling..."];
-var recommend = global.rec;
 
+var recommend = global.rec;
 var ready = false;
 
 conn.on("ready", function() {
@@ -42,14 +42,12 @@ conn.on("ready", function() {
 		});
 		
 		setTimeout(function() {
-            ready = true;
-        }, 1000 * 5);
+            		ready = true;
+        	}, 1000 * 5);
 
 		stream.on("data", function(data) {
-			
 			data = data + "";
 			data = data.substring(0, data.length - 2);
-
 			var splitdata = data.split("\u001b[");
 			var newdata = [];
 			splitdata.forEach(function(v, k) {
@@ -67,7 +65,6 @@ conn.on("ready", function() {
 				//ok, good to go...
 				
 				data = data.trim();
-				
 				console.log(data);
 				
 				if(data[0] !== "*" && data[0] !== "-"){
@@ -120,7 +117,7 @@ conn.on("ready", function() {
 							write("Please thank shazow for making this chat, Sam for making the zsh bot, and node for making me", prefix, stream);
 						}
 						else if(command === "help"){
-							write("these are valid commands: bots, translate <input language (ISO code)> <output language (ISO)> <text>, news [best|home|newest], decorate <text>, 5:00, flip <something>, weather <place>, math <expression>, destroy <name>, about, thank, help, insult <name>, recommend, sing. There are also some 'hidden' commands.", prefix, stream);
+							write("these are valid commands: btc, bots, translate <input language (ISO code)> <output language (ISO)> <text>, news [best|home|newest], decorate <text>, 5:00, flip <something>, weather <place>, math <expression>, destroy <name>, about, thank, help, insult <name>, recommend, sing. There are also some 'hidden' commands.", prefix, stream);
 						}
 						else if(command === "recommend"){
 							write(pick(recommend), prefix, stream);
@@ -290,6 +287,30 @@ conn.on("ready", function() {
 								}	
 							});
 						}
+						else if(command === "btc"){
+							request("http://coinabul.com/api.php", function(error, response, body){
+								//try{
+									if(!error && response.statusCode === 200){
+										var btc = JSON.parse(body).BTC.USD;
+										console.log(JSON.parse(body).BTC);
+										out = "Value in USD: $" + btc;
+										write(out, prefix, stream);
+									}
+								//}catch(e){}
+								
+							});
+						}
+						else if(command === "stands_for" && arr.length === 3){
+							var acro = arr[2];
+							request("http://www.nactem.ac.uk/softwar/acromine/dictionary.py?sf="+acro, function(error, response, body){
+								try{
+									if(!error && response.statusCode === 200){
+										out = "Stands for: " + JSON.parse(body).lfs[0].lf + " Since " + JSON.parse(body).lfs[0].since;
+										write(out, prefix, stream);
+									}
+								}catch(e){}
+							});
+						}
 						else{
 							out = "I'm sorry " + user + ". I'm afraid I can't do that.";
 							write(out, prefix, stream);
@@ -318,7 +339,7 @@ conn.connect({
 	port: 22,
 	username: nick,
 	privateKey: fs.readFileSync(sshKey),
-	passphrase: fs.readFileSync("../pass.txt",{encoding: 'utf-8'}),
+	passphrase: fs.readFileSync("../../pass.txt",{encoding: 'utf-8'}),
 	readyTimeout: 9999
 });
 
