@@ -3,6 +3,8 @@ An ssh bot for ssh-chat by shazow. Based off of zshbot by Sxw1212. To log on usi
 ```
 ssh user@chat.shazow.net
 ```
+##About##
+
 This bot does a bunch of somewhat random things, and connects to the server using the node.js module `ssh2`.
 
 <blockquote>
@@ -12,6 +14,19 @@ You'll also want to change the location of your ssh key and ssh passphrase to ma
 </blockquote>
 
 nodebot also logs stuff. check it out <a href="https://codeyourcloud.com/nodebot/log.txt">here</a>.
+
+##The Future##
+* hangman!
+* sports and technology news, not just from HN (via the `news` command)
+* more ascii/unicode art
+* ummm...more insults?
+* pizza locations
+* move ratings
+* pizza movie ratings
+* movie pizza locations
+
+
+##Commands##
 
 __hello__
 ```
