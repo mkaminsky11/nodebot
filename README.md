@@ -5,14 +5,15 @@ An ssh bot for ssh-chat by shazow. Based off of zshbot by Sxw1212. To log on usi
 ssh user@chat.shazow.net
 ```
 
-This bot does a bunch of somewhat random things:
+This bot does a bunch of somewhat random things
 
+__hello__
 ```
 user: nodebot hello
 nodebot: hello, user
 ```
 says hello back
-
+__cat__
 ```
 user: nodebot cat
 nodebot: ʕ•ᴥ•ʔ - meow
