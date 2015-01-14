@@ -112,7 +112,7 @@ conn.on("ready", function() {
 						user = temp[0].trim().replace("[PM from ","");
 						text = temp.slice(1).join("]");
 						
-						text = "nodebot " + text.trim();
+						text = nick + " " + text.trim();
 						prefix = "/msg " + user + " ";
 					}
 					
@@ -186,15 +186,15 @@ conn.on("ready", function() {
 							out = out.trim();
 							write(out, prefix, stream);
 						}
-						else if(text === "nodebot make me a sandwich" || text === "nodebot, make me a sandwich"){
+						else if(text === (nick+" make me a sandwich") || text === (nick+", make me a sandwich")){
 							write(user + ", make your own damn sandwich!", prefix, stream);
 						}
-						else if(text === "nodebot sudo make me a sandwich" || text === "nodebot, sudo make me a sandwich"){
+						else if(text === (nick+" sudo make me a sandwich") || text === (nick+", sudo make me a sandwich")){
 							write("ok.", prefix, stream);
 						}
 						else if(command === "echo"){
 							var echo = text;
-							echo = echo.replace("nodebot echo","").replace("nodebot, echo", "");
+							echo = echo.replace(nick+" echo","").replace(nick+", echo", "");
 							
 							out = echo.trim();
 							if(out[0] !== "/"){
