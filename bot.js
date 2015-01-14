@@ -1,5 +1,7 @@
 /*
-NODEBOT: a bot for ssh-chat	
+NODEBOT: a bot for ssh-chat
+===========================
+to see it in action, use "ssh user@chat.shazow.net"
 */
 
 //LOAD ALL NECESSARY MODULES
@@ -28,9 +30,7 @@ var trivia_index = 0;
 var misc = global.misc;
 var trivia_q = global.trivia;
 var destroy = global.destroy;
-var insult_1 = global.i1;
-var insult_2 = global.i2;
-var insult_3 = global.i3;
+var insult_1 = global.i1;var insult_2 = global.i2;var insult_3 = global.i3; //insults!
 var sing = global.sing;
 
 var recommend = global.rec;
@@ -66,7 +66,6 @@ conn.on("ready", function() {
 
 			if (data != "[" + nick && data != "\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b" && data !== "") {
 				//ok, good to go...
-				
 				data = data.trim();
 				console.log(data);
 				
@@ -90,15 +89,12 @@ conn.on("ready", function() {
 					whois = whois + " @ " + d + "\n";
 					try{
 						if(whois.trim() !== "Welcome to chat.shazow.net, enter /help for more."){
-							fs.appendFile('log.txt', whois, function (err) {
-							
-							});
+							fs.appendFile('log.txt', whois, function (err) {});
 						}
 					}catch(e){}
 				}
 				
 				if(data[0] !== "*" && data[0] !== "-"){
-					
 					var text = "";
 					var user = "";
 					var prefix = "";
@@ -106,7 +102,6 @@ conn.on("ready", function() {
 					
 					//not join/left or something else
 					if(data.indexOf("[PM from ") !== -1){
-						
 						//private message
 						var temp = data.split("]");
 						user = temp[0].trim().replace("[PM from ","");
@@ -114,6 +109,9 @@ conn.on("ready", function() {
 						
 						text = nick + " " + text.trim();
 						prefix = "/msg " + user + " ";
+						/*
+						so, unless it's an insult, this will make the output go back to the private messager
+						*/
 					}
 					
 					else if(data.indexOf(":") !== -1){
@@ -125,12 +123,10 @@ conn.on("ready", function() {
 					
 					text = text.trim();
 					user = user.trim();
-					
 					var arr = text.split(" ");
 					if((arr[0] === nick || arr[0] === (nick + ",")) && arr.length >= 2){
 						//a nodebot command!
 						var command = arr[1];
-						
 						if(command === "hello"){
 							write("hello, " + user, prefix, stream);
 						}
@@ -200,7 +196,6 @@ conn.on("ready", function() {
 						else if(command === "echo"){
 							var echo = text;
 							echo = echo.replace(nick + " echo","").replace(nick + ", echo", "");
-							
 							out = echo.trim();
 							if(out[0] !== "/"){
 								write(out, prefix, stream);
@@ -209,7 +204,6 @@ conn.on("ready", function() {
 						else if(command === "decorate"){
 							var dec = text;
 							dec = dec.replace(nick + " decorate","").replace(nick + ", decorate", "");
-							
 							out = pick(misc).replace("_",echo.trim());
 							if(out[0] !== "/"){
 								write(out, prefix, stream);
@@ -221,13 +215,11 @@ conn.on("ready", function() {
 							try{
 								out = math.eval(m);
 								write(out, prefix, stream);
-							}catch(e){
-							}
+							}catch(e){}
 						}
 						else if(command === "destroy" && arr.length === 3){
 							var destroy = text;
 							destroy = destroy.replace(nick + " destroy","").replace(nick + ", destroy", "");
-							
 							out = destroy.trim();
 							out = out + " was destroyed by " + pick(destroy);
 							out = out.trim();
@@ -243,7 +235,6 @@ conn.on("ready", function() {
 						else if(command === "flip" && arr.length >= 3){
 							var w = text;
 							w  = text.replace(nick + " flip","").replace(nick + ", flip", "").trim();
-							
 							out = "(╯°□°）╯ " + upsidedown(w);
 							write(out, prefix, stream);
 						}
@@ -274,6 +265,7 @@ conn.on("ready", function() {
 							write(out, prefix, stream);
 						}
 					}
+					//disabled for now
 					
 					/*if(text.toLowerCase().trim() === trivia_q[trivia_index].a.toLowerCase().trim() && trivia){
 						//trivia answer
