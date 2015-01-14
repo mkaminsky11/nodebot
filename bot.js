@@ -140,6 +140,9 @@ conn.on("ready", function() {
 						else if(command === "log"){
 							write("logging is at https://codeyourcloud.com/nodebot/log.txt", prefix, stream);
 						}
+						else if(command === "source"){
+							write("source located at https://github.com/mkaminsky11/nodebot", prefix, stream);
+						}
 						else if(command === "sir"){
 							multi(ascii.sir, stream);
 						}
@@ -165,7 +168,7 @@ conn.on("ready", function() {
 							write("Please thank shazow for making this chat, Sam for making the zsh bot, and node for making me", prefix, stream);
 						}
 						else if(command === "help"){
-							write("these are valid commands: lazer, owner, sir, btc, bots, translate <input language (ISO code)> <output language (ISO)> <text>, news [best|home|newest], decorate <text>, 5:00, flip <something>, weather <place>, math <expression>, destroy <name>, about, thank, help, insult <name>, recommend, sing. There are also some 'hidden' commands.", prefix, stream);
+							write("these are valid commands: source, lazer, owner, sir, btc, bots, translate <input language (ISO code)> <output language (ISO)> <text>, news [best|home|newest], decorate <text>, 5:00, flip <something>, weather <place>, math <expression>, destroy <name>, about, thank, help, insult <name>, recommend, sing. There are also some 'hidden' commands.", prefix, stream);
 						}
 						else if(command === "recommend"){
 							write(pick(recommend), prefix, stream);
