@@ -187,7 +187,9 @@ conn.on("ready", function() {
 							person = person.replace(nick + " insult","").replace(nick + ", insult", "");
 							out = person + " " + pick(insult_1) + " " + pick(insult_2) + " " + pick(insult_3);
 							out = out.trim();
-							write(out, prefix, stream);
+							if(out[0] !== "/"){
+								write(out, prefix, stream);
+							}
 						}
 						else if(text === (nick+" make me a sandwich") || text === (nick+", make me a sandwich")){
 							write(user + ", make your own damn sandwich!", prefix, stream);
@@ -228,8 +230,10 @@ conn.on("ready", function() {
 							
 							out = destroy.trim();
 							out = out + " was destroyed by " + pick(destroy);
-							write(out, prefix, stream);
-							
+							out = out.trim();
+							if(out[0] !== "/"){
+								write(out, prefix, stream);
+							}
 						}
 						else if(command === "weather" && arr.length >= 3 && ready === true){
 							weather.info(text, function(out){
@@ -255,7 +259,9 @@ conn.on("ready", function() {
 						}
 						else if(command === "translate" && arr.length >= 5){
 							translator.translate(arr, function(out){
-								write(out, prefix, stream);
+								if(out.trim()[0] !== "/"){
+									write(out, prefix, stream);
+								}
 							});
 						}
 						else if(command === "btc"){
