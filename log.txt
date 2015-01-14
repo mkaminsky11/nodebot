@@ -93,3 +93,4 @@ bootstrap is  via SSH-2.0-OpenSSH_5.9p1Debian-5ubuntu1.4 @ 2015-01-14 15:29:48
 No such name: ghost-of-shazow @ 2015-01-14 15:45:54
 node is de:d2:64:29:e3:3c:00:27:44:11:2c:94:10:52:2e:e9 via SSH-2.0-OpenSSH_5.9p1Debian-5ubuntu1.4 @ 2015-01-14 16:01:36
 nano is  via SSH-2.0-JuiceSSH @ 2015-01-14 16:03:54
+username is c5:2c:1c:42:7f:2d:02:e1:31:ca:f8:89:b1:8f:2a:6c via SSH-2.0-OpenSSH_6.2 @ 2015-01-14 16:12:32
