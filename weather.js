@@ -1,7 +1,10 @@
+//let it snow, let it snow, let it snow
+//weather module for nodebot
+var nick = "nodebot";
 var weather = require('weather-js');
 exports.info = function(text, callback){
 	var w = text;
-	w  = text.replace("nodebot weather","").replace("nodebot, weather", "").trim();
+	w  = text.replace(nick + " weather","").replace(nick + ", weather", "").trim();
 	
 	weather.find({search: w, degreeType: 'F'}, function(err, result) {
 		try{
