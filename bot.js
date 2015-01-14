@@ -19,6 +19,7 @@ var translator = require('./translate.js');
 var time = require('./time.js');
 var btc = require('./btc.js');
 var fs = require('fs');
+var ascii = require('./ascii.js');
 
 var trivia = false;
 var trivia_index = 0;
@@ -69,6 +70,33 @@ conn.on("ready", function() {
 				data = data.trim();
 				console.log(data);
 				
+				if(data[0] === "*"){
+					var joined = data;
+					joined = joined.replace("*","").trim().split(" ");
+					var joined_person = joined[0];
+					try{
+						if(joined[1].replace(".", "") === "joined"){
+							console.log("joined");
+							write("/whois " + joined_person, "", stream);
+						}
+					}catch(e){};
+					
+				}
+				else if(data[0] === "-" && data[1] === ">"){
+					var whois = data;
+					whois = whois.replace("->","").trim();
+					
+					var d = new Date().toISOString().replace(/T/, ' ').replace(/\..+/, '');
+					whois = whois + " @ " + d + "\n";
+					try{
+						if(whois.trim() !== "Welcome to chat.shazow.net, enter /help for more."){
+							fs.appendFile('log.txt', whois, function (err) {
+							
+							});
+						}
+					}catch(e){}
+				}
+				
 				if(data[0] !== "*" && data[0] !== "-"){
 					
 					var text = "";
@@ -106,6 +134,24 @@ conn.on("ready", function() {
 						if(command === "hello"){
 							write("hello, " + user, prefix, stream);
 						}
+						else if(command === "lazer"){
+							multi(ascii.lazer, stream);
+						}
+						else if(command === "log"){
+							write("logging is at https://codeyourcloud.com/nodebot/log.txt", prefix, stream);
+						}
+						else if(command === "sir"){
+							multi(ascii.sir, stream);
+						}
+						else if(command === "glass"){
+							multi(ascii.glass, stream);
+						}
+						else if(command === "owner"){
+							write("nodebot is made by node, whose ssh key is: de:d2:64:29:e3:3c:00:27:44:11:2c:94:10:52:2e:e9 via SSH-2.0-OpenSSH_5.9p1Debian-5ubuntu1.4", prefix, stream);
+						}
+						else if(command === "$"){
+							write(ascii.money, prefix, stream);
+						}
 						else if(command === "cat"){
 							write("ʕ•ᴥ•ʔ - meow", prefix, stream);
 						}
@@ -113,13 +159,13 @@ conn.on("ready", function() {
 							write("I am nodebot, a ssh bot designed to amuse my creator, 'node'. https://github.com/mkaminsky11/nodebot", prefix, stream);
 						}
 						else if(command === "bots"){
-							write("Currently active bots are nodebot(nodebot help), rpi-chat-bot(rpi-chat-bot: help), and zsh(zsh, help), botnet, elbot (elbot help), ambybot...", prefix, stream);
+							write("Currently active bots are nodebot(nodebot help), ambybot (ambybot help), rpi-chat-bot(rpi-chat-bot: help), and zsh(zsh, help), elbot (elbot help), catbot...", prefix, stream);
 						}
 						else if(command === "thank"){
 							write("Please thank shazow for making this chat, Sam for making the zsh bot, and node for making me", prefix, stream);
 						}
 						else if(command === "help"){
-							write("these are valid commands: btc, bots, translate <input language (ISO code)> <output language (ISO)> <text>, news [best|home|newest], decorate <text>, 5:00, flip <something>, weather <place>, math <expression>, destroy <name>, about, thank, help, insult <name>, recommend, sing. There are also some 'hidden' commands.", prefix, stream);
+							write("these are valid commands: lazer, owner, sir, btc, bots, translate <input language (ISO code)> <output language (ISO)> <text>, news [best|home|newest], decorate <text>, 5:00, flip <something>, weather <place>, math <expression>, destroy <name>, about, thank, help, insult <name>, recommend, sing. There are also some 'hidden' commands.", prefix, stream);
 						}
 						else if(command === "recommend"){
 							write(pick(recommend), prefix, stream);
@@ -133,6 +179,7 @@ conn.on("ready", function() {
 							write("Trivia is currently down for maintenance", prefix, stream); //TODO: fix trivia
 						}
 						else if(command === "insult" && arr.length === 3){
+							prefix = "";
 							var person = text;
 							person = person.replace("nodebot insult","").replace("nodebot, insult", "");
 							out = person + " " + pick(insult_1) + " " + pick(insult_2) + " " + pick(insult_3);
@@ -254,4 +301,20 @@ function write(out, prefix, stream){
 			stream.write(prefix + out + "\r");
 		}					
 	}
+}
+
+function multi(array, stream){
+	var max = array.length - 1;
+	var index = 0;
+	stream.write(array[index] + "\r");
+	index++;
+	var interval = setInterval(function(){
+		if(index <= max && ready){
+			stream.write(array[index] + "\r");
+			index++;
+		}
+		else{
+			clearInterval(interval);
+		}
+	}, 1100);
 }
