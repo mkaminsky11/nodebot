@@ -51,3 +51,6 @@ function reset(){
   add_ship(2);
 }
 
+function add_ship(num){
+ 
+}
