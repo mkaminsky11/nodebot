@@ -181,7 +181,7 @@ conn.on("ready", function() {
 						else if(command === "insult" && arr.length === 3){
 							prefix = "";
 							var person = text;
-							person = person.replace("nodebot insult","").replace("nodebot, insult", "");
+							person = person.replace(nick + " insult","").replace(nick + ", insult", "");
 							out = person + " " + pick(insult_1) + " " + pick(insult_2) + " " + pick(insult_3);
 							out = out.trim();
 							write(out, prefix, stream);
@@ -194,7 +194,7 @@ conn.on("ready", function() {
 						}
 						else if(command === "echo"){
 							var echo = text;
-							echo = echo.replace(nick+" echo","").replace(nick+", echo", "");
+							echo = echo.replace(nick + " echo","").replace(nick + ", echo", "");
 							
 							out = echo.trim();
 							if(out[0] !== "/"){
@@ -202,8 +202,8 @@ conn.on("ready", function() {
 							}
 						}
 						else if(command === "decorate"){
-							var echo = text;
-							echo = echo.replace("nodebot decorate","").replace("nodebot, decorate", "");
+							var dec = text;
+							dec = dec.replace(nick + " decorate","").replace(nick + ", decorate", "");
 							
 							out = pick(misc).replace("_",echo.trim());
 							if(out[0] !== "/"){
@@ -212,7 +212,7 @@ conn.on("ready", function() {
 						}
 						else if(command === "math"){
 							var m = text;
-							m = m.replace("nodebot math","").replace("nodebot, math", "");
+							m = m.replace(nick + " math","").replace(nick + ", math", "");
 							try{
 								out = math.eval(m);
 								write(out, prefix, stream);
@@ -220,8 +220,11 @@ conn.on("ready", function() {
 							}
 						}
 						else if(command === "destroy" && arr.length === 3){
-							var person = arr[2];
-							out = person + " was destroyed by " + pick(destroy);
+							var destroy = text;
+							destroy = destroy.replace(nick + " destroy","").replace(nick + ", destroy", "");
+							
+							out = destroy.trim();
+							out = out + " was destroyed by " + pick(destroy);
 							write(out, prefix, stream);
 							
 						}
@@ -232,7 +235,7 @@ conn.on("ready", function() {
 						}
 						else if(command === "flip" && arr.length >= 3){
 							var w = text;
-							w  = text.replace("nodebot flip","").replace("nodebot, flip", "").trim();
+							w  = text.replace(nick + " flip","").replace(nick + ", flip", "").trim();
 							
 							out = "(╯°□°）╯ " + upsidedown(w);
 							write(out, prefix, stream);
