@@ -47,5 +47,7 @@ function reset(){
   add_ship(3);
   add_ship(2);
   add_ship(2);
+  add_ship(2);
+  add_ship(2);
 }
 
