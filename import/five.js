@@ -71,7 +71,14 @@ var times = [
 	}
 ];
 
-exports.five = function(callback){
+
+function pick(myArray){
+	var rand = myArray[Math.floor(Math.random() * myArray.length)];
+	return rand;
+}
+
+
+exports.init = function(arr, user, text, callback){
 	var date = new Date();
 	var current_hour = date.getHours() + 1;
 	var done = false;
@@ -89,13 +96,8 @@ exports.five = function(callback){
 			
 			if(temp_hour === 18){
 				done = true;
-				callback("It's 5 o'clock somewhere. Right now, it is quitting time in: " + pick(times[i].cities)); 
+				callback("It's 5 o'clock somewhere. Right now, it is quitting time in: " + pick(times[i].cities), false); 
 			}
 		}
-	}	
+	}
 };
-
-function pick(myArray){
-	var rand = myArray[Math.floor(Math.random() * myArray.length)];
-	return rand;
-}

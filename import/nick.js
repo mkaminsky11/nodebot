@@ -1,0 +1,1 @@
+exports.nick = "nodebot";

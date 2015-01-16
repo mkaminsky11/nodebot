@@ -1,0 +1,110 @@
+{
+	"data":[
+		{
+			"name": "hello",
+			"path": "./import/hello.js"
+		},
+		{
+			"name": "lazer",
+			"path": "./import/lazer.js"
+		},
+		{
+			"name": "log",
+			"path": "./import/log.js"
+		},
+		{
+			"name": "source",
+			"path": "./import/source.js"
+		},
+		{
+			"name": "sir",
+			"path": "./import/sir.js"
+		},
+		{
+			"name": "owner",
+			"path": "./import/owner.js"
+		},
+		{
+			"name": "glass",
+			"path": "./import/glass.js"
+		},
+		{
+			"name": "$",
+			"path": "./import/cash.js"
+		},
+		{
+			"name": "cat",
+			"path": "./import/cat.js"
+		},
+		{
+			"name": "about",
+			"path": "./import/about.js"
+		},
+		{
+			"name": "bots",
+			"path": "./import/bots.js"
+		},
+		{
+			"name": "thank",
+			"path": "./import/thank.js"
+		},
+		{
+			"name": "help",
+			"path": "./import/help.js"
+		},
+		{
+			"name": "recommend",
+			"path": "./import/recommend.js"
+		},
+		{
+			"name": "sing",
+			"path": "./import/sing.js"
+		},
+		{
+			"name": "trivia",
+			"path": "./import/trivia.js"
+		},
+		{
+			"name": "insult",
+			"path": "./import/insult.js"
+		},
+		{
+			"name": "echo",
+			"path": "./import/echo.js"
+		},
+		{
+			"name": "decorate",
+			"path": "./import/decorate.js"
+		},
+		{
+			"name": "destroy",
+			"path": "./import/destroy.js"
+		},
+		{
+			"name": "flip",
+			"path": "./import/flip.js"
+		},
+		{
+			"name": "math",
+			"path": "./import/math.js"
+		},
+		{
+			"name": "weather",
+			"path": "./import/weather.js"
+		},
+		{
+			"name": "5:00",
+			"path": "./import/five.js"
+		},
+		{
+			"name": "news",
+			"path": "./import/news.js"
+		},{
+			"name": "translate",
+			"path": "./import/translate.js"
+		},{
+			"name": "btc",
+			"path": "./import/btc.js"
+		}
+	]
+}

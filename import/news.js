@@ -1,6 +1,7 @@
+var nick = require("./nick.js").nick;
 var hn = require("hn.js");
 
-exports.news = function(arr, callback){
+exports.init = function(arr, user, text, callback){
 	var page = "home";
 	var out = "";
 	if(arr.length === 3){
@@ -19,7 +20,7 @@ exports.news = function(arr, callback){
 			    temp.push(items[i].title);
 		    }
 		    out = "From HN: " + temp.join("...");
-		    callback(out);							    
+		    callback(out, false);							    
 		});
 	}
 	else if(page === "best"){
@@ -31,7 +32,7 @@ exports.news = function(arr, callback){
 			    temp.push(items[i].title);
 		    }
 		    out = "From HN: " + temp.join("...");
-		    callback(out);		
+		    callback(out, false);		
 		    
 		});
 	}else{
@@ -43,7 +44,7 @@ exports.news = function(arr, callback){
 			    temp.push(items[i].title);
 		    }
 		    out = "From HN: " + temp.join("...");
-		    callback(out);	
+		    callback(out, false);	
 		    
 		});
 	}
