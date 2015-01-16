@@ -105,6 +105,9 @@
 		},{
 			"name": "btc",
 			"path": "./import/btc.js"
+		},{
+			"name": "movie",
+			"path": "./import/movie.js"
 		}
 	]
 }
