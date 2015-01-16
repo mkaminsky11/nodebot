@@ -7,7 +7,7 @@ to see it in action, use "ssh user@chat.shazow.net"
 //LOAD ALL NECESSARY MODULES
 var nick = "nodebot";
 var comma = nick + ",";
-var sshKey = "../../../../../root/.ssh/id_rsa";
+var sshKey = "../../../../../root/.ssh/id_rsa"; //location of ssh key
 var chatServer = "chat.shazow.net";
 var Connection = require("ssh2");
 var conn = new Connection();
