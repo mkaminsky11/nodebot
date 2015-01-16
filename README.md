@@ -15,6 +15,12 @@ You'll also want to change the location of your ssh key and ssh passphrase to ma
 
 nodebot also logs stuff. check it out <a href="https://codeyourcloud.com/nodebot/log.txt">here</a>.
 
+##Changelog##
+__1/15/15__
+Completely overhauled the code. Same functions, but organized differently. All commands have their own javascript file in the `import` folder. Their function is `exports.init = function(arr, user, text, callback)` where `callback` takes `out`(the output) and `clear`(a boolean which tells wether or not to negate the private message function). 
+
+Adding functions is now done via the `command.json` file. Also, `log.txt` now has newest logs at the top, not the bottom. All previous data has been flipped to reflect this.
+
 ##The Future##
 * hangman!
 * sports and technology news, not just from HN (via the `news` command)
