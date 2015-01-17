@@ -1,6 +1,6 @@
-var cats = require("cat-ascii-faces");
+var cool = require("cool-ascii-faces");
 
 exports.init = function(arr, user, text, callback){
-	var out = cats() + " -meow";
+	var out = cool();
 	callback(out, true);
 };

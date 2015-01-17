@@ -1,3 +1,99 @@
+node is de:d2:64:29:e3:3c:00:27:44:11:2c:94:10:52:2e:e9 via SSH-2.0-OpenSSH_5.9p1Debian-5ubuntu1.4 @ 2015-01-17 13:59:02
+No such name: ghost-of-shazow @ 2015-01-17 13:48:30
+void is 78:9b:e3:c7:c6:89:d4:ce:c6:b2:1a:fb:8f:0e:11:fc via SSH-2.0-OpenSSH_5.3 @ 2015-01-17 13:05:21
+nano is 71:b4:e0:0b:7b:06:b1:8b:b7:1c:70:a7:31:b6:7f:7f via SSH-2.0-OpenSSH_4.6 @ 2015-01-17 13:03:33
+No such name: ghost-of-shazow @ 2015-01-17 12:48:28
+tobi is 0b:4a:03:bb:87:af:47:cd:7b:1d:b4:ab:74:24:94:51 via SSH-2.0-OpenSSH_6.6.1p1Ubuntu-8 @ 2015-01-17 12:45:37
+alaster is 01:12:f6:7a:39:0d:e1:86:e1:57:26:f6:82:a1:7a:79 via SSH-2.0-OpenSSH_6.2 @ 2015-01-17 11:56:12
+No such name: ghost-of-shazow @ 2015-01-17 11:48:27
+Sean is 94:38:aa:91:e7:8f:e3:06:5c:17:23:3f:7f:da:bd:27 via SSH-2.0-OpenSSH_6.2 @ 2015-01-17 11:34:40
+klg is ac:ae:90:45:88:08:93:a7:ca:ca:02:8f:ca:04:38:30 via SSH-2.0-OpenSSH_6.7p1Debian-3 @ 2015-01-17 11:16:19
+No such name: ghost-of-shazow @ 2015-01-17 10:48:25
+Fett is cc:ec:cd:0e:78:77:c9:d8:f2:f7:69:01:40:ed:73:df via SSH-2.0-OpenSSH_6.6.1p1Ubuntu-8 @ 2015-01-17 10:07:39
+No such name: ghost-of-shazow @ 2015-01-17 09:48:24
+elbot is 78:9b:e3:c7:c6:89:d4:ce:c6:b2:1a:fb:8f:0e:11:fc via SSH-2.0-OpenSSH_5.3 @ 2015-01-17 09:05:43
+No such name: ghost-of-shazow @ 2015-01-17 08:48:24
+No such name: ghost-of-shazow @ 2015-01-17 07:48:22
+podan is 55:2f:ae:52:77:b7:60:43:4f:dd:72:03:e9:47:e7:f9 via SSH-2.0-OpenSSH_5.6 @ 2015-01-17 07:44:09
+Fett is 57:57:f5:e7:5c:13:70:26:93:8f:48:eb:13:d6:54:8c via SSH-2.0-OpenSSH_6.2 @ 2015-01-17 07:35:55
+void is 78:9b:e3:c7:c6:89:d4:ce:c6:b2:1a:fb:8f:0e:11:fc via SSH-2.0-OpenSSH_5.3 @ 2015-01-17 06:59:12
+No such name: ghost-of-shazow @ 2015-01-17 06:48:22
+sleep is 85:98:86:2f:61:72:1d:06:fb:ee:94:c1:4a:a3:ca:76 via SSH-2.0-OpenSSH_6.6.1p1Ubuntu-2ubuntu2 @ 2015-01-17 06:06:02
+No such name: ghost-of-shazow @ 2015-01-17 05:48:21
+0xDEADBEEF is a0:16:7f:6e:0e:ce:10:c6:e0:ce:dc:a8:5f:92:bc:d3 via SSH-2.0-OpenSSH_6.6.1p1Ubuntu-2ubuntu2 @ 2015-01-17 05:40:37
+kyhwana is 97:4b:a9:0f:98:d4:2b:f5:ec:c8:f9:93:b9:2d:08:66 via SSH-2.0-OpenSSH_6.7 @ 2015-01-17 04:56:10
+No such name: ghost-of-shazow @ 2015-01-17 04:48:20
+Sean is 94:38:aa:91:e7:8f:e3:06:5c:17:23:3f:7f:da:bd:27 via SSH-2.0-OpenSSH_6.2 @ 2015-01-17 04:47:48
+bobc is 7b:00:eb:60:2b:1c:dc:e6:75:29:42:d6:64:4c:ed:2c via SSH-2.0-OpenSSH_6.6.1p1Ubuntu-2ubuntu2 @ 2015-01-17 04:34:33
+root is 09:37:7e:95:7e:74:82:9f:e6:e8:7d:dd:10:f2:50:28 via SSH-2.0-OpenSSH_6.0p1Debian-4deb7u2 @ 2015-01-17 03:57:10
+No such name: ghost-of-shazow @ 2015-01-17 03:48:18
+root is 09:37:7e:95:7e:74:82:9f:e6:e8:7d:dd:10:f2:50:28 via SSH-2.0-OpenSSH_6.0p1Debian-4deb7u2 @ 2015-01-17 03:44:14
+No such name: ghost-of-shazow @ 2015-01-17 02:48:17
+fff is 05:1d:c3:65:2c:cd:66:b4:01:8e:0c:ba:c9:fa:0a:50 via SSH-2.0-PuTTY_Release_0.63 @ 2015-01-17 02:44:56
+node is de:d2:64:29:e3:3c:00:27:44:11:2c:94:10:52:2e:e9 via SSH-2.0-OpenSSH_5.9p1Debian-5ubuntu1.4 @ 2015-01-17 02:11:39
+No such name: ghost-of-shazow @ 2015-01-17 01:48:16
+Sam is 28:02:ec:aa:0a:44:a3:3a:cc:e7:5e:6c:73:9f:cc:01 via SSH-2.0-OpenSSH_6.2 @ 2015-01-17 01:35:31
+Guest332 is 12:5b:66:89:22:04:0f:0c:4d:90:33:1f:05:86:24:c0 via SSH-2.0-libssh2_1.4.3 @ 2015-01-17 01:29:51
+Guest331 is 12:5b:66:89:22:04:0f:0c:4d:90:33:1f:05:86:24:c0 via SSH-2.0-libssh2_1.4.3 @ 2015-01-17 01:29:50
+Guest330 is 12:5b:66:89:22:04:0f:0c:4d:90:33:1f:05:86:24:c0 via SSH-2.0-libssh2_1.4.3 @ 2015-01-17 01:29:50
+Sam is 12:5b:66:89:22:04:0f:0c:4d:90:33:1f:05:86:24:c0 via SSH-2.0-libssh2_1.4.3 @ 2015-01-17 01:29:48
+Sam is 12:5b:66:89:22:04:0f:0c:4d:90:33:1f:05:86:24:c0 via SSH-2.0-OpenSSH_6.4 @ 2015-01-17 01:19:12
+Guest327 is 12:5b:66:89:22:04:0f:0c:4d:90:33:1f:05:86:24:c0 via SSH-2.0-libssh2_1.4.3 @ 2015-01-17 01:15:44
+Guest326 is 12:5b:66:89:22:04:0f:0c:4d:90:33:1f:05:86:24:c0 via SSH-2.0-libssh2_1.4.3 @ 2015-01-17 01:14:43
+root is 12:5b:66:89:22:04:0f:0c:4d:90:33:1f:05:86:24:c0 via SSH-2.0-libssh2_1.4.3 @ 2015-01-17 01:13:41
+Guest324 is 12:5b:66:89:22:04:0f:0c:4d:90:33:1f:05:86:24:c0 via SSH-2.0-libssh2_1.4.3 @ 2015-01-17 01:12:24
+lastfirst is 12:5b:66:89:22:04:0f:0c:4d:90:33:1f:05:86:24:c0 via SSH-2.0-libssh2_1.4.3 @ 2015-01-17 01:11:02
+alaster is 01:12:f6:7a:39:0d:e1:86:e1:57:26:f6:82:a1:7a:79 via SSH-2.0-OpenSSH_6.2 @ 2015-01-17 00:51:50
+No such name: ghost-of-shazow @ 2015-01-17 00:48:16
+zlagadong is 12:5b:66:89:22:04:0f:0c:4d:90:33:1f:05:86:24:c0 via SSH-2.0-OpenSSH_6.4 @ 2015-01-17 00:17:35
+kvg is 3a:d5:46:08:3a:c3:04:4e:97:46:3a:47:47:e2:39:45 via SSH-2.0-OpenSSH_6.2 @ 2015-01-17 00:15:33
+No such name: ghost-of-shazow @ 2015-01-16 23:48:14
+node is de:d2:64:29:e3:3c:00:27:44:11:2c:94:10:52:2e:e9 via SSH-2.0-OpenSSH_5.9p1Debian-5ubuntu1.4 @ 2015-01-16 23:32:13
+lastfirst is 12:5b:66:89:22:04:0f:0c:4d:90:33:1f:05:86:24:c0 via SSH-2.0-libssh2_1.4.3 @ 2015-01-16 23:13:22
+Unable to send message to krodyn:: no client with that nick @ 2015-01-16 23:10:08
+Unable to send message to krodyn:: no client with that nick @ 2015-01-16 23:09:43
+Unable to send message to krodyn:: no client with that nick @ 2015-01-16 23:08:39
+Unable to send message to krodyn:: no client with that nick @ 2015-01-16 23:07:31
+Unable to send message to krodyn:: no client with that nick @ 2015-01-16 23:06:25
+Unable to send message to rpi-chat-bot:: no client with that nick @ 2015-01-16 22:59:52
+Unable to send message to krodyn:: no client with that nick @ 2015-01-16 22:59:52
+No such name: ghost-of-shazow @ 2015-01-16 22:48:14
+Guest314 is 4e:65:d4:7f:6e:b0:2c:07:f5:8c:db:0a:50:ee:7d:d8 via SSH-2.0-PuTTY_Release_0.63 @ 2015-01-16 22:46:49
+matthink is 1e:0f:c0:85:05:0a:75:26:02:67:86:8a:19:c1:e7:88 via SSH-2.0-OpenSSH_6.2 @ 2015-01-16 22:24:23
+Sam is 28:02:ec:aa:0a:44:a3:3a:cc:e7:5e:6c:73:9f:cc:01 via SSH-2.0-OpenSSH_6.2 @ 2015-01-16 22:21:49
+test is 4e:65:d4:7f:6e:b0:2c:07:f5:8c:db:0a:50:ee:7d:d8 via SSH-2.0-PuTTY_Release_0.63 @ 2015-01-16 22:05:17
+amber is 3a:38:8f:ff:af:a0:fa:2c:85:78:1d:59:e9:1a:20:b1 via SSH-2.0-OpenSSH_6.7p1-hpn14v5 @ 2015-01-16 22:03:32
+hungry-stone is 4e:65:d4:7f:6e:b0:2c:07:f5:8c:db:0a:50:ee:7d:d8 via SSH-2.0-PuTTY_Release_0.63 @ 2015-01-16 22:02:22
+kvg is 3a:d5:46:08:3a:c3:04:4e:97:46:3a:47:47:e2:39:45 via SSH-2.0-OpenSSH_6.2 @ 2015-01-16 22:01:19
+brandon is c8:9b:82:f4:01:67:26:45:fe:71:70:73:3a:97:2f:fe via SSH-2.0-OpenSSH_6.6.1p1Ubuntu-2ubuntu2 @ 2015-01-16 21:59:24
+No such name: ghost-of-shazow @ 2015-01-16 21:48:13
+amber is 3a:38:8f:ff:af:a0:fa:2c:85:78:1d:59:e9:1a:20:b1 via SSH-2.0-OpenSSH_6.7p1-hpn14v5 @ 2015-01-16 21:24:42
+kvg is 3a:d5:46:08:3a:c3:04:4e:97:46:3a:47:47:e2:39:45 via SSH-2.0-OpenSSH_6.2 @ 2015-01-16 21:08:21
+woo is c1:1d:02:20:15:57:06:bf:06:8b:2f:8d:2a:fb:54:d5 via SSH-2.0-OpenSSH_6.2 @ 2015-01-16 21:05:40
+nano is 71:b4:e0:0b:7b:06:b1:8b:b7:1c:70:a7:31:b6:7f:7f via SSH-2.0-OpenSSH_4.6 @ 2015-01-16 21:02:48
+Switchblade is 96:45:a1:77:ec:73:fd:1c:3b:22:98:25:d4:d3:7f:33 via SSH-2.0-OpenSSH_6.7 @ 2015-01-16 20:51:16
+No such name: ghost-of-shazow @ 2015-01-16 20:48:11
+philipp is 17:18:e3:fd:b8:1f:af:45:af:ba:10:07:85:68:72:67 via SSH-2.0-OpenSSH_6.6.1p1Ubuntu-8 @ 2015-01-16 20:32:40
+node is de:d2:64:29:e3:3c:00:27:44:11:2c:94:10:52:2e:e9 via SSH-2.0-OpenSSH_5.9p1Debian-5ubuntu1.4 @ 2015-01-16 20:13:36
+ijks is 47:73:45:77:a5:5d:b1:12:fe:60:c7:30:cb:f3:40:44 via SSH-2.0-OpenSSH_6.6.1p1Ubuntu-2ubuntu2 @ 2015-01-16 20:12:43
+testspace is c5:2c:1c:42:7f:2d:02:e1:31:ca:f8:89:b1:8f:2a:6c via SSH-2.0-OpenSSH_6.2 @ 2015-01-16 20:11:25
+node is de:d2:64:29:e3:3c:00:27:44:11:2c:94:10:52:2e:e9 via SSH-2.0-OpenSSH_5.9p1Debian-5ubuntu1.4 @ 2015-01-16 20:11:16
+node is de:d2:64:29:e3:3c:00:27:44:11:2c:94:10:52:2e:e9 via SSH-2.0-OpenSSH_5.9p1Debian-5ubuntu1.4 @ 2015-01-16 20:10:28
+node is de:d2:64:29:e3:3c:00:27:44:11:2c:94:10:52:2e:e9 via SSH-2.0-OpenSSH_5.9p1Debian-5ubuntu1.4 @ 2015-01-16 20:08:55
+node is de:d2:64:29:e3:3c:00:27:44:11:2c:94:10:52:2e:e9 via SSH-2.0-OpenSSH_5.9p1Debian-5ubuntu1.4 @ 2015-01-16 20:08:21
+node is de:d2:64:29:e3:3c:00:27:44:11:2c:94:10:52:2e:e9 via SSH-2.0-OpenSSH_5.9p1Debian-5ubuntu1.4 @ 2015-01-16 20:07:56
+node is de:d2:64:29:e3:3c:00:27:44:11:2c:94:10:52:2e:e9 via SSH-2.0-OpenSSH_5.9p1Debian-5ubuntu1.4 @ 2015-01-16 20:01:01
+Guest277 is 1e:1f:9c:8a:e3:73:21:67:b5:98:9c:6c:97:9c:9f:cd via SSH-2.0-OpenSSH_6.6.1p1Ubuntu-2ubuntu2 @ 2015-01-16 19:56:05
+RiSe is b1:77:c9:0a:8f:0f:38:7b:12:fa:d7:bc:53:f1:57:1a via SSH-2.0-OpenSSH_6.2 @ 2015-01-16 19:55:44
+rise is 1e:1f:9c:8a:e3:73:21:67:b5:98:9c:6c:97:9c:9f:cd via SSH-2.0-OpenSSH_6.6.1p1Ubuntu-2ubuntu2 @ 2015-01-16 19:51:43
+No such name: ghost-of-shazow @ 2015-01-16 19:48:11
+rust is 8e:e9:2a:98:09:a1:6a:5d:99:e7:68:99:b1:a7:ec:9d via SSH-2.0-OpenSSH_5.9p1Debian-5ubuntu1.4 @ 2015-01-16 19:21:13
+void is 78:9b:e3:c7:c6:89:d4:ce:c6:b2:1a:fb:8f:0e:11:fc via SSH-2.0-OpenSSH_5.3 @ 2015-01-16 19:17:29
+shot is 8e:e9:2a:98:09:a1:6a:5d:99:e7:68:99:b1:a7:ec:9d via SSH-2.0-OpenSSH_5.9p1Debian-5ubuntu1.4 @ 2015-01-16 19:15:12
+Guest269 is c5:2c:1c:42:7f:2d:02:e1:31:ca:f8:89:b1:8f:2a:6c via SSH-2.0-OpenSSH_6.2 @ 2015-01-16 19:13:05
+randombot is c5:2c:1c:42:7f:2d:02:e1:31:ca:f8:89:b1:8f:2a:6c via SSH-2.0-OpenSSH_6.2 @ 2015-01-16 19:10:02
+muahaha is cd:3d:41:e5:fb:a3:0d:5b:ec:3c:96:0e:ac:b3:d8:5c via SSH-2.0-OpenSSH_5.3 @ 2015-01-16 19:07:44
+zlagadong is 12:5b:66:89:22:04:0f:0c:4d:90:33:1f:05:86:24:c0 via SSH-2.0-OpenSSH_6.4 @ 2015-01-16 19:06:14
 chudler is bb:60:a6:0b:56:d9:1c:41:13:47:9e:2d:a9:6e:1a:53 via SSH-2.0-OpenSSH_6.6.1p1Ubuntu-2ubuntu2 @ 2015-01-16 18:48:49
 No such name: ghost-of-shazow @ 2015-01-16 18:48:10
 klg is ac:ae:90:45:88:08:93:a7:ca:ca:02:8f:ca:04:38:30 via SSH-2.0-OpenSSH_6.7p1Debian-3 @ 2015-01-16 18:45:28

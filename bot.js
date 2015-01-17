@@ -64,9 +64,11 @@ conn.on("ready", function() {
 				
 				console.log(data);
 				
-				monitor.check(data, function(cmd){
-					write(cmd, "", stream);
-				});
+				if(ready){
+					monitor.check(data, function(cmd){
+						write(cmd, "", stream);
+					});
+				}
 
 				
 				if(data[0] !== "*" && data[0] !== "-"){
@@ -104,7 +106,7 @@ conn.on("ready", function() {
 						
 						var found = false;
 						for(var i = 0; i < commands.length; i++){
-							if(commands[i].name === command){
+							if(commands[i].name === command && ready){
 								found = true;
 								commands[i].obj.init(arr, user, text, function(out_out, clear){
 									if(out_out.output !== null){

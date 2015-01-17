@@ -16,6 +16,12 @@ You'll also want to change the location of your ssh key and ssh passphrase to ma
 nodebot also logs stuff. check it out <a href="https://codeyourcloud.com/nodebot/log.txt">here</a>.
 
 ##Changelog##
+__1/17/15__
+Added the `ask` function, which searches for information via the Wolfram Alpha API.
+
+__1/16/15__
+Added the `movie` function, which gives the plot, release year, and IMDB rating of a movie.
+
 __1/15/15__
 Completely overhauled the code. Same functions, but organized differently. All commands have their own javascript file in the `import` folder. Their function is `exports.init = function(arr, user, text, callback)` where `callback` takes `out`(the output) and `clear`(a boolean which tells wether or not to negate the private message function). 
 

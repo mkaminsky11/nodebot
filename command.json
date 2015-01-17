@@ -108,6 +108,12 @@
 		},{
 			"name": "movie",
 			"path": "./import/movie.js"
+		},{
+			"name": "face",
+			"path": "./import/face.js"
+		},{
+			"name": "ask",
+			"path": "./import/ask.js"
 		}
 	]
 }
