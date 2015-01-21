@@ -1,6 +1,9 @@
+//interacts with the Wolframe Alpha API
+//that's pretty cool, right?
+
 var nick = require("./nick.js").nick;
 var request = require("request");
-var id = "L8Q62E-X5HRY9VWVT";
+var id = "L8Q62E-X5HRY9VWVT"; //API key / user id
 var parseString = require('xml2js').parseString;
 
 
@@ -15,7 +18,7 @@ exports.init = function(arr, user, text, callback){
 				  
 				var xml = body;
 				
-				parseString(xml, function (err, result) {
+				parseString(xml, function (err, result) { //this takes a while, but whatever
 					try{
 				    	console.log(result.queryresult.pod[1].subpod);
 				    	var title = result.queryresult.pod[1].$.title;
@@ -42,11 +45,13 @@ exports.init = function(arr, user, text, callback){
 		});
 	}
 	catch(e){
-		callback("There was an error", false);
+		callback("There was an error", false); //can't have too many error messages, can you?
 		console.log(e);
 	}
 };
 
+
+//might use this to replaced xml2js to just split the XML
 var multiSplit = function(str,delimeters){
     var result = [str];
     if (typeof(delimeters) == 'string')

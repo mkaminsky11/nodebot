@@ -47,6 +47,13 @@ nodebot: hello, user
 ```
 says hello back
 
+__ask__
+```
+user: nodebot ask population of Boston
+nodebot: Result:636479 people  (country rank: 22nd)  (2012 estimate)
+```
+gets information via Wolfram Alpha API. Dude.
+
 __recommend__
 ```
 user: nodebot recommend

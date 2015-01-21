@@ -1,3 +1,6 @@
+//gets the current exchange rate of bitcoins
+//right now, just in USD ($$$$!)
+
 var request = require("request");
 
 exports.init = function(arr, user, text, callback){
