@@ -3,6 +3,9 @@ An ssh bot for ssh-chat by shazow. Based off of zshbot by Sxw1212. To log on usi
 ```
 ssh user@chat.shazow.net
 ```
+
+![demo](img/nodebot.gif)
+
 ##About##
 
 This bot does a bunch of somewhat random things, and connects to the server using the node.js module `ssh2`.
